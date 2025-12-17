@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agilité & Échecs — Article</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card-bg: rgba(255, 255, 255, 0.75);
+      --text-main: #0b1220;
+      --text-muted: #5b6478;
+      --border: rgba(15, 23, 42, 0.12);
+      --accent: #6366f1;
+      --neon: rgba(99, 102, 241, 0.45);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background:
+        radial-gradient(circle at 15% 10%, rgba(99,102,241,0.15), transparent 40%),
+        radial-gradient(circle at 85% 20%, rgba(56,189,248,0.12), transparent 45%),
+        linear-gradient(180deg, #ffffff, var(--bg));
+      color: var(--text-main);
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 80px 40px 120px;
+    }
+
+    article {
+      max-width: 1180px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 56px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+    }
+
+    header {
+      margin-bottom: 48px;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
+    }
+
+    header h1 span {
+      background: linear-gradient(90deg, var(--accent), #38bdf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      white-space: nowrap;
+    }
+
+    header p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 100%;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      white-space: normal;
+    }
+
+    section {
+      margin-top: 48px;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 500;
+      margin-bottom: 16px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.75;
+      margin-bottom: 16px;
+    }
+
+    ul {
+      margin: 16px 0 24px 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    blockquote {
+      margin: 32px 0;
+      padding: 24px 28px;
+      border-left: 3px solid var(--accent);
+      background: rgba(99, 102, 241, 0.05);
+      border-radius: 12px;
+      font-style: italic;
+    }
+
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border), transparent);
+      margin: 56px 0;
+    }
+
+    .callout {
+      margin-top: 40px;
+      padding: 28px;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.6));
+    }
+
+    .callout:hover {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 1px var(--accent), 0 0 14px var(--neon);
+    }
+
+    @media (max-width: 768px) {
+      .container { padding: 64px 28px 80px; }
+      article { padding: 40px 32px; }
+      header h1 { font-size: 2.1rem; }
+    }
+
+    @media (max-width: 480px) {
+      .container { padding: 48px 16px 64px; }
+      article { padding: 28px 20px; }
+      header h1 { font-size: 1.75rem; }
+      p { font-size: 0.95rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <article>
+      <header>
+        <h1>♟️ <span>Quand l'agilité s'invite sur l'échiquier</span></h1>
+        <p>Comment les préceptes agiles m'ont conduit jusqu'aux Championnats de France d'échecs<br>
+		Un article accessible à tous, quelque soit votre connaissance du jeu d'échecs.</p>
+      </header>
+
+      <p>Il y a quelques années, bien avant de baigner dans l'agilité, je passais mes soirées devant un échiquier.<br>
+	  Un rêve en tête : jouer contre un Grand Maître.</p>
+      <p>Objectif après objectif, tournoi après tournoi, ce chemin m'a mené jusqu'aux Championnats de France.</p>
+
+      <blockquote>
+        👉 Ma progression n'a jamais reposé sur une connaissance exhaustive.<br>
+        👉 Elle reposait sur des boucles d'apprentissage courtes, empiriques et orientées valeur.
+      </blockquote>
+
+      <p>Autrement dit : je faisais déjà de l'agilité… sans le savoir.</p>
+
+      <div class="divider"></div>
+
+      <section>
+        <h2>🔁 Une approche empirique : planifier, inspecter, adapter, répéter</h2>
+        <p>Aux échecs, impossible de tout concevoir à l'avance : il faut constamment s'adapter aux réactions de l'adversaire.<br>
+		Certes, les Grands Maîtres sont capables de mémoriser des centaines d'ouvertures et de réciter les 20 premiers coups d'une partie comme un ordinateur. Mais pour le joueur amateur que j'étais, cet effort de mémorisation était hors de portée.<br>
+        J'ai donc choisi une approche plus simple et surtout plus efficace pour moi : comprendre en profondeur les principes de quelques ouvertures plutôt que d'en retenir toutes les variantes.<br>
+        L'objectif n'était pas de connaître chaque coup, mais de saisir la ligne directrice, les enjeux de la position et de jouer des coups cohérents avec cette compréhension.<br>
+		Concrètement, sans le savoir je touchais au cœur de l'agilité :</p>
+		<ul>
+          <li>Jouer selon ma lecture de la position ➡️ planification et exécution</li>
+          <li>Observer les résultats ➡️ transparence sur le résultat</li>
+          <li>Analyser les écarts ➡️ inspection fréquente</li>
+          <li>Ajuster la stratégie de partie en partie ➡️ adaptation continue</li>
+        </ul>
+        <p>Chaque partie devenait un incrément. Chaque tournoi, un sprint.</p>
+      </section>
+
+      <section>
+        <h2>👥 L'intelligence collective avant la performance individuelle</h2>
+        <p>Le mythe du joueur d'échecs solitaire est trompeur.<br>
+		Ma progression s'est appuyée sur un véritable système collaboratif :</p>
+        <ul>
+          <li>Un club bienveillant ➡️ Cadre sécurisé</li>
+          <li>Un coaching ➡️ Feedback structurant</li>
+          <li>Des partenaires plus forts que moi ➡️ Déclencheurs d'apprentissage</li>
+        </ul>
+		<p>Comme dans une organisation agile, la performance individuelle n'est qu'un effet secondaire d'un collectif performant. Sans feedback externe, pas de progression durable.</p>
+      </section>
+
+      <section>
+        <h2>🔍 Rétrospectives systématiques et amélioration continue</h2>
+        <p>Chaque partie faisait l'objet d'une analyse "post-mortem". J'y identifiais :</p>
+		<ul>
+          <li>les décisions pertinentes ➡️ Exécution conforme à la planification</li>
+          <li>les signaux faibles ignorés ➡️ Détection et analyse des risques</li>
+		  <li>les coups forcés non explorés ➡️ Exploitation des opportunités de production de valeur</li>
+          <li>les erreurs à fort impact (celles qui me faisaient sortir de ma ligne directrice) ➡️ Imprévus ou oublis remettant en cause la planification</li>
+        </ul>
+        <p>L'objectif n'était pas d'être parfait, mais de définir une action concrète d'amélioration applicable dès la partie suivante.<br>
+Une logique Kaizen, de petits ajustements, mais continus.</p>
+
+      <blockquote>
+	  Explication des notions évoquées :<br>
+        👉 Signal faible : indice subtil qui peut annoncer un problème futur.<br>Par exemple : une pièce non protégée est un signal faible même si elle n'est pas encore attaquée.<br>
+        👉 Coup forcé : Mouvement de pièce qui contraint l'adversaire à un coup avec très peu d'alternatives. Cela permet de simplifier le calcul et donne des opportunités d'attaques tactiques.<br>Par exemple : Mettre le roi adverse en échec est un coup forcé car l'adversaire sera forcé de parer cet échec et a, en général, peu d'options pour le faire.
+      </blockquote>
+	  
+      </section>
+
+      <section>
+        <h2>🎯 Priorisation par la valeur et gestion des contraintes</h2>
+        <p>Le backlog théorique d'un joueur d'échecs est infini : centaines d'ouvertures, milliers de positions, innombrables variantes. Mais le temps, l'énergie et les capacités cognitives sont limités.<br>
+        La clé fut donc la priorisation : éviter la dispersion en travaillant ce qui avait le meilleur retour sur investissement (ROI), exploiter mes forces plutôt que combler toutes mes faiblesses, viser un impact rapide sur mes résultats.<br>
+		Une approche finalement très proche de la gestion de backlog produit.</p>
+      </section>
+
+      <div class="divider"></div>
+
+      <section class="callout">
+        <p><strong>Ce que j'en ai appris :</strong></p>
+		<p>Que l'on développe un produit ou une stratégie sur un échiquier :</p>
+        <ul>
+          <li>Les systèmes complexes nécessitent de l'empirisme</li>
+          <li>La valeur émerge par itérations courtes</li>
+          <li>Le feedback est un accélérateur majeur</li>
+          <li>Le collectif prime sur l'individuel</li>
+          <li>La priorisation fait la différence</li>
+        </ul>
+		<p>Et parfois, sans en avoir pleinement conscience, ce sont ces principes qui permettent de franchir des paliers…</p>
+      </section>
+
+      <p style="margin-top:32px;">📉 Si vous aimez les histoires qui finissent mal : Je me suis bien qualifié aux Championnats de France, j'y ai joué 11 parties, mais ma performance médiocre ne m'a pas permis d'affronter les meilleurs.<br>
+      📈 Si vous préférez les histoires qui finissent bien : En 2011, j'ai finalement affronté un Grand Maître lors d'un open international. (Spoiler : j'ai perdu 😄)</p>
+
+      <p><strong>Et vous ?</strong> Dans votre parcours personnel, à quel moment avez-vous réalisé que vous appliquiez déjà des principes agiles sans en avoir pleinement conscience ?</p>
+
+    </article>
+  </main>
+
+</body>
+</html>
