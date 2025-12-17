@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Repository – Home</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-color: #0e1117;
+      --card-color: #161b22;
+      --accent: #4fd1c5;
+      --text-main: #e6edf3;
+      --text-muted: #9ba3b4;
+      --border-color: #30363d;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at top, #111827, var(--bg-color));
+      color: var(--text-main);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+      padding: 40px;
+    }
+
+    header {
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, #161b22, #0d1117);
+      border: 1px solid var(--border-color);
+      border-radius: 14px;
+      padding: 24px;
+      text-decoration: none;
+      color: var(--text-main);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border 0.25s ease;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top left, rgba(79, 209, 197, 0.15), transparent 60%);
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+
+    .card:hover::before {
+      opacity: 1;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: var(--accent);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .card h2 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    footer span {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Bienvenue</h1>
+      <p>Page d'accueil du repository GitHub – navigation rapide vers les différentes pages</p>
+    </header>
+
+    <section class="grid">
+      <!-- Remplace les liens par ceux de ton repo -->
+      <a class="card" href="page1.html">
+        <h2>Page 1</h2>
+        <p>Description courte de la page ou du projet associé.</p>
+      </a>
+
+      <a class="card" href="page2.html">
+        <h2>Page 2</h2>
+        <p>Description courte de la page ou du projet associé.</p>
+      </a>
+
+      <a class="card" href="page3.html">
+        <h2>Page 3</h2>
+        <p>Description courte de la page ou du projet associé.</p>
+      </a>
+
+      <a class="card" href="https://github.com/TON_USER/TonRepo" target="_blank">
+        <h2>Repository GitHub</h2>
+        <p>Accéder directement au code source sur GitHub.</p>
+      </a>
+    </section>
+
+    <footer>
+      <p>© 2025 — <span>Ton Nom</span></p>
+    </footer>
+  </div>
+
+</body>
+</html>
