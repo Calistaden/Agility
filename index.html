@@ -85,17 +85,7 @@
       transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
     }
 
-    .card::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: inherit;
-      background: linear-gradient(120deg, transparent 40%, var(--glow), transparent 60%);
-      opacity: 0;
-      transition: opacity 0.25s ease;
-      pointer-events: none;
-    }
-
+    
     .card:hover::after {
       opacity: 1;
     }
@@ -103,7 +93,10 @@
     .card:hover {
       transform: translateY(-6px) scale(1.01);
       border-color: var(--accent);
-      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
+      box-shadow:
+        0 0 0 1px var(--accent),
+        0 0 12px rgba(99, 102, 241, 0.35),
+        0 12px 32px rgba(15, 23, 42, 0.15);
     }
 
     .card h2 {
@@ -182,17 +175,17 @@
 
   <main class="container">
     <header>
-      <h1>Bienvenue sur <span>mon espace</span></h1>
-      <p>Hub central pour naviguer entre les pages, projets et expérimentations de ce repository.</p>
+      <h1>Bienvenue sur <span>Klanistadena</span></h1>
+      <p>Mon hub pour naviguer entre mes pages, projets et expérimentations Klanik.</p>
     </header>
 
     <section class="grid">
-      <a class="card" href="page1.html">
-        <h2>Page 1</h2>
-        <p>Présentation ou fonctionnalité principale du projet.</p>
+      <a class="card" href="Agile_Chess.html">
+        <h2>Blog agile Chess</h2>
+        <p>Un article pour le blog Klanik sur un REX de ma vie échiquéenne</p>
       </a>
 
-      <a class="card" href="page2.html">
+ <!--     <a class="card" href="page2.html">
         <h2>Page 2</h2>
         <p>Section dédiée à un module, une démo ou une documentation.</p>
       </a>
@@ -206,10 +199,11 @@
         <h2>Code source</h2>
         <p>Accéder au repository GitHub et à l’historique des commits.</p>
       </a>
+-->
     </section>
 
     <footer>
-      <p>© 2025 — <span>Ton Nom</span></p>
+      <p>© 2025 — <span>Laurentin DEVIDET</span></p>
     </footer>
   </main>
 
