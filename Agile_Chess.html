@@ -91,6 +91,19 @@
       gap: 10px;
       align-items: center;
     }
+	
+	h3 {
+	  font-size: 1.1rem;
+	  font-weight: 500;
+	  margin: 32px 0 12px;
+	  color: var(--text-main);
+	  letter-spacing: -0.01em;
+	}
+	
+	h3::before {
+	  content: "— ";
+	  color: var(--accent);
+	}
 
     p {
       font-size: 1rem;
@@ -154,9 +167,9 @@
   <main class="container">
     <article>
       <header>
-        <h1>♟️ <span>Quand l'agilité s'invite sur l'échiquier</span></h1>
-        <p>Comment les préceptes agiles m'ont conduit jusqu'aux Championnats de France d'échecs<br>
-		Un article accessible à tous, quelque soit votre connaissance du jeu d'échecs.</p>
+        <h1>♟️ <span>Quand l'agilité s'invite sur l'échiquier !</span></h1>
+        <p>Comment les préceptes agiles m'ont conduit jusqu'aux Championnats de France d'échecs.<br>
+		Un article accessible à tous, quelle que soit votre connaissance du jeu d'échecs.</p>
       </header>
 
       <p>Il y a quelques années, bien avant de baigner dans l'agilité, je passais mes soirées devant un échiquier.<br>
@@ -178,7 +191,7 @@
 		Certes, les Grands Maîtres sont capables de mémoriser des centaines d'ouvertures et de réciter les 20 premiers coups d'une partie comme un ordinateur. Mais pour le joueur amateur que j'étais, cet effort de mémorisation était hors de portée.<br>
         J'ai donc choisi une approche plus simple et surtout plus efficace pour moi : comprendre en profondeur les principes de quelques ouvertures plutôt que d'en retenir toutes les variantes.<br>
         L'objectif n'était pas de connaître chaque coup, mais de saisir la ligne directrice, les enjeux de la position et de jouer des coups cohérents avec cette compréhension.<br>
-		Concrètement, sans le savoir je touchais au cœur de l'agilité :</p>
+		Concrètement, sans en avoir conscience, je touchais au cœur de l'agilité :</p>
 		<ul>
           <li>Jouer selon ma lecture de la position ➡️ planification et exécution</li>
           <li>Observer les résultats ➡️ transparence sur le résultat</li>
@@ -190,41 +203,91 @@
 
       <section>
         <h2>👥 L'intelligence collective avant la performance individuelle</h2>
-        <p>Le mythe du joueur d'échecs solitaire est trompeur.<br>
-		Ma progression s'est appuyée sur un véritable système collaboratif :</p>
+        <p>Le mythe du joueur d'échecs solitaire est trompeur. Si la partie se joue seul, la progression, elle, est profondément collective.<br>
+		Elle s'est appuyée sur un véritable système collaboratif :</p>
         <ul>
-          <li>Un club bienveillant ➡️ Cadre sécurisé</li>
-          <li>Un coaching ➡️ Feedback structurant</li>
-          <li>Des partenaires plus forts que moi ➡️ Déclencheurs d'apprentissage</li>
+          <li>Un club bienveillant où l'erreur n'était pas sanctionnée mais analysée, où perdre une partie n'était pas un échec personnel mais une opportunité d'apprentissage<br>➡️ Cadre sécurisé, droit à l'expérimentation et à l'erreur</li>
+          <li>Un coaching qui apportait un regard extérieur et m'aidait à prendre conscience de mes erreurs récurrentes<br>➡️ Feedback structurant externe sur les dysfonctionnements systémiques (souvent apporté par un coach agile)</li>
+          <li>Des partenaires plus forts que moi pour me confronter à la réalité, me mettre en difficulté et stimuler l'envie d'élever mon niveau de jeu<br>➡️ Déclencheurs d'apprentissage</li>
         </ul>
 		<p>Comme dans une organisation agile, la performance individuelle n'est qu'un effet secondaire d'un collectif performant. Sans feedback externe, pas de progression durable.</p>
       </section>
 
       <section>
         <h2>🔍 Rétrospectives systématiques et amélioration continue</h2>
-        <p>Chaque partie faisait l'objet d'une analyse "post-mortem". J'y identifiais :</p>
+        <p>Chaque partie faisait l'objet d'une analyse "post mortem". J'y identifiais :</p>
 		<ul>
           <li>les décisions pertinentes ➡️ Exécution conforme à la planification</li>
-          <li>les signaux faibles ignorés ➡️ Détection et analyse des risques</li>
-		  <li>les coups forcés non explorés ➡️ Exploitation des opportunités de production de valeur</li>
+          <li>les signaux faibles* ignorés ➡️ Détection et analyse des risques</li>
+		  <li>les coups forcés* non explorés ➡️ Exploitation des opportunités de production de valeur</li>
           <li>les erreurs à fort impact (celles qui me faisaient sortir de ma ligne directrice) ➡️ Imprévus ou oublis remettant en cause la planification</li>
         </ul>
         <p>L'objectif n'était pas d'être parfait, mais de définir une action concrète d'amélioration applicable dès la partie suivante.<br>
 Une logique Kaizen, de petits ajustements, mais continus.</p>
 
       <blockquote>
-	  Explication des notions évoquées :<br>
-        👉 Signal faible : indice subtil qui peut annoncer un problème futur.<br>Par exemple : une pièce non protégée est un signal faible même si elle n'est pas encore attaquée.<br>
-        👉 Coup forcé : Mouvement de pièce qui contraint l'adversaire à un coup avec très peu d'alternatives. Cela permet de simplifier le calcul et donne des opportunités d'attaques tactiques.<br>Par exemple : Mettre le roi adverse en échec est un coup forcé car l'adversaire sera forcé de parer cet échec et a, en général, peu d'options pour le faire.
-      </blockquote>
-	  
+	  Explication des notions échiquéennes évoquées :<br>
+        👉 Signal faible : Indice subtil qui peut annoncer un problème futur.<br>Par exemple : avoir une pièce non protégée est un signal faible même si elle n'est pas encore attaquée.<br>
+        👉 Coup forcé : Mouvement de pièce qui contraint l'adversaire à un coup avec très peu d'alternatives. Cela permet de simplifier le calcul et donne des opportunités d'attaques tactiques.<br>Par exemple : Mettre le roi adverse en échec est un coup forcé car l'adversaire sera contraint de parer cet échec et a, en général, peu d'options pour le faire.
+      </blockquote>	  
       </section>
 
       <section>
         <h2>🎯 Priorisation par la valeur et gestion des contraintes</h2>
-        <p>Le backlog théorique d'un joueur d'échecs est infini : centaines d'ouvertures, milliers de positions, innombrables variantes. Mais le temps, l'énergie et les capacités cognitives sont limités.<br>
-        La clé fut donc la priorisation : éviter la dispersion en travaillant ce qui avait le meilleur retour sur investissement (ROI), exploiter mes forces plutôt que combler toutes mes faiblesses, viser un impact rapide sur mes résultats.<br>
-		Une approche finalement très proche de la gestion de backlog produit.</p>
+        <p>Le backlog théorique d'un joueur d'échecs est infini : centaines d'ouvertures, milliers de positions, une infinité de variantes possibles à chaque coup. Mais le temps, l'énergie et les capacités cognitives sont limités.<br>
+		J'ai rapidement compris que face à l'immensité de connaissances  à acquérir, la vraie question n’était pas <em>"que puis-je encore apprendre ?"</em>, mais plutôt
+		<em><strong>"qu’est-ce qui aura le plus d’impact sur mes résultats à court et moyen terme ?"</strong></em></p>
+        <p>La clé fut donc la priorisation par la valeur.<br>Au lieu de me disperser j'ai choisi de travailler en priorité ce qui avait le meilleur retour sur investissement (ROI), exploiter mes forces plutôt que combler toutes mes faiblesses, viser un impact rapide sur mes résultats.<br>
+		J'acceptais le risque, d'être parfois sorti de ma zone de confort par un adversaire ayant une approche originale de la position. En échange j'y gagnais la possibilité d'une efficacité rapide dans les situations que je rencontrais la majorité du temps.<br>
+		En définitive, l'objectif n'était pas d'être complet, mais d'être efficace.</p>
+		<p>Une approche finalement très proche de la gestion de backlog produit.<br>
+		Un produit pourrait théoriquement intégrer une infinité de fonctionnalités, mais les ressources sont limitées.<br>
+		Tout l’enjeu consiste alors à arbitrer ce qui crée réellement de la valeur, ce qui peut attendre, et ce qui ne sera probablement jamais fait.<br>
+		Une démarche de priorisation qui accepte de renoncer à certains éléments pour en améliorer d'autres jugés plus importants.</p>
+		<p>➡️ Prioriser c’est accepter que la valeur n’émerge pas de l’exhaustivité, mais de la focalisation.</p>
+      </section>
+</section>
+
+<section>
+        <h2>⏱️ La pression invisible du temps</h2>
+        <p>Combien de Scrum Masters avez-vous entendu dire que <em>"la grande majorité des User Stories du PI ont été terminées dans le dernier sprint, voire même… le dernier jour du PI"</em> ?<br>
+		Sur le papier, tout est planifié, chaque sprint embarque une quantité de travail cohérente avec la vélocité de l'équipe. Dans la réalité, le temps agit comme une pression silencieuse, rarement visible dans les boards ou les reportings, mais omniprésente dans les décisions.<br>
+		Aux échecs, cette pression porte un nom : la pendule*.<br>
+		Et comme en agilité, la manière dont on la gère fait toute la différence.<br>
+		J’ai été, à différents moments, ces trois types de joueurs :</p>
+		<h3>Le fonceur qui termine la partie en n'ayant utilisé que 10% du temps qui lui était accordé</h3>
+		<p>Pensant mettre la pression du temps sur les épaules de mon adversaire, je jouais vite, trop vite, j'enchaînais les coups sans réelle vérification des menaces adverses, sans prise de recul et... je faisais des erreurs qu'il ne manquait pas d'exploiter.<br>
+		Ces caractéristiques se retrouvent dans les équipes qui livrent en continu sans jamais prendre le temps de s'arrêter pour inspecter (revues bâclées, rétrospectives négligées, problèmes ignorés). Elles avancent vite mais parfois dans la mauvaise direction.</p>
+		<p>  ➡️ La vitesse sans intention ni inspection n’est pas de l’agilité, c’est de la précipitation.</p>
+		<h3>Le perfectionniste qui utilise 95% de son temps sur ses 10 premiers coups</h3>
+		
+		<p>Je voulais tout prévoir, tout anticiper, tout sécuriser dès le départ. Inévitablement, un coup imprévu survenait en plein zeitnot*... et je manquais de temps pour réfléchir à la meilleure réponse. Les décisions étaient alors prises dans la panique avec pour seul objectif d'éviter de perdre à la pendule.<br>
+		On retrouve cet écueil dans l'agilité lorsqu'une équipe tombe dans le piège de sur-concevoir son PI avec une phase de cadrage interminable, une obsession de la Definition of Done parfaite, une volonté de tout verrouiller trop tôt.<br>
+		Cette sur-qualité engendre une dette de temps qui se paye en fin de PI, par des décisions précipitées prises dans l'urgence pour "tenir les engagements".</p>
+		<p>  ➡️ Chercher la perfection trop tôt revient souvent à déplacer le risque... pas à le supprimer.</p>
+		<h3>Le joueur mature qui est rapide sur l'évident et posé sur le critique</h3>
+		<p>Avec l’expérience, j’ai compris qu’il ne s’agissait ni de jouer vite, ni de jouer lentement mais de jouer au bon rythme.<br>
+		Le joueur mature est capable d'être rapide pour jouer les coups évidents. En revanche, il sait aussi reconnaître les moments critiques (changement de structure de pions, attaque potentielle, décision irréversible) pour s'y arrêter plus longuement, calculer, recadrer sa stratégie.<br>
+		C'est ce niveau d'expérience qui caractérise une organisation agile mature.<br>
+		L'équipe est capable d'accélérer sur ce qui est clair et maîtrisé, ralentir volontairement quand l'incertitude augmente, reposer la vision, vérifier la cible, s'assurer de maximiser la valeur avant de s'engager plus loin.</p>
+		<p>  ➡️ La pendule, comme la timebox du sprint, n'est pas une contrainte à subir mais un outil de priorisation de l'attention.<br>
+		  Ces paramètres obligent à accepter que tout ne mérite pas le même niveau d’analyse, et à décider consciemment où investir son énergie mentale.</p>
+
+		<h3>Ce qui compte ce n'est pas le temps, c'est ce que l'on en fait </h3>
+		<p>Ce qui est fascinant, c’est que ce fonctionnement est valable quel que soit le temps de départ. Partie longue ou blitz*, sprint de deux semaines ou PI de trois mois : les principes restent identiques. Seule l’intensité de la contrainte temporelle varie.</p>
+		<p>Quand le temps est abondant, les déséquilibres sont dilués. Les erreurs peuvent être rattrapées, les mauvaises décisions corrigées en cours de route.<br> 
+		À l’inverse, quand le temps est court, tout devient visible : hésitations, sur-analyse, décisions impulsives, manque de priorisation.<br>
+		Le blitz ne crée pas de mauvais joueurs ; il agit comme un révélateur brutal de leur manière de décider sous pression.<br>
+		Il en va de même en agilité. Un PI long peut masquer des problèmes de focus, de vision ou de priorisation. Mais raccourcir les cycles (via des sprints courts, des revues fréquentes, des feedbacks rapides) expose immédiatement les fragilités de l'organisation. Pas pour sanctionner, mais pour apprendre plus vite.</p>
+		<p>En définitive, la vraie maîtrise aux échecs comme en agilité ne consiste pas à tout faire vite ou tout faire lentement, mais à savoir quand s’arrêter pour mieux décider.</p>
+		<p>➡️ Parce que sous la pression du temps, ce n’est pas celui qui réfléchit le plus longtemps qui gagne… c’est celui qui décide au bon moment.</p>
+
+	  <blockquote>
+	  Explication des notions échiquéennes évoquées :<br>
+        👉 pendule d'échecs : Système de deux horloges couplées permettant de décompter le temps de réflexion utilisé par chaque joueur pour jouer ses coups. Si la pendule d'un joueur arrive à zéro alors il perd la partie.<br>
+		👉 Zeitnot : Mot allemand issu de Zeit (temps) et Not (pénurie) qui désigne la situation d'un joueur à qui il reste très peu de temps à sa pendule pour jouer plusieurs coups.<br>
+		👉 Blitz : Mot allemand qui signifie "éclair". Désigne les parties pour lesquelles la durée de la réflexion est limitée entre 3 et 10 minutes par joueur.
+      </blockquote>
       </section>
 
       <div class="divider"></div>
@@ -238,6 +301,7 @@ Une logique Kaizen, de petits ajustements, mais continus.</p>
           <li>Le feedback est un accélérateur majeur</li>
           <li>Le collectif prime sur l'individuel</li>
           <li>La priorisation fait la différence</li>
+		  <li>Le temps n’est pas à optimiser, mais à investir là où l’impact est maximal</li>
         </ul>
 		<p>Et parfois, sans en avoir pleinement conscience, ce sont ces principes qui permettent de franchir des paliers…</p>
       </section>
