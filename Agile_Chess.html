@@ -42,9 +42,21 @@
       background: var(--card-bg);
       border: 1px solid var(--border);
       border-radius: 20px;
-      padding: 56px;
       backdrop-filter: blur(12px);
       box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+      overflow: hidden;
+    }
+
+    /* ===== HERO IMAGE ===== */
+    .hero-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+      box-shadow: 0 24px 48px rgba(15, 23, 42, 0.18);
+    }
+
+    .content {
+      padding: 56px;
     }
 
     header {
@@ -73,9 +85,6 @@
     header p {
       font-size: 1.05rem;
       color: var(--text-muted);
-      max-width: 100%;
-      word-wrap: break-word;
-      overflow-wrap: break-word;
       white-space: normal;
     }
 
@@ -91,19 +100,18 @@
       gap: 10px;
       align-items: center;
     }
-	
-	h3 {
-	  font-size: 1.1rem;
-	  font-weight: 500;
-	  margin: 32px 0 12px;
-	  color: var(--text-main);
-	  letter-spacing: -0.01em;
-	}
-	
-	h3::before {
-	  content: "— ";
-	  color: var(--accent);
-	}
+
+    h3 {
+      font-size: 1.1rem;
+      font-weight: 500;
+      margin: 32px 0 12px;
+      letter-spacing: -0.01em;
+    }
+
+    h3::before {
+      content: "— ";
+      color: var(--accent);
+    }
 
     p {
       font-size: 1rem;
@@ -150,26 +158,37 @@
 
     @media (max-width: 768px) {
       .container { padding: 64px 28px 80px; }
-      article { padding: 40px 32px; }
+      .content { padding: 40px 32px; }
       header h1 { font-size: 2.1rem; }
     }
 
     @media (max-width: 480px) {
       .container { padding: 48px 16px 64px; }
-      article { padding: 28px 20px; }
+      .content { padding: 28px 20px; }
       header h1 { font-size: 1.75rem; }
       p { font-size: 0.95rem; }
     }
   </style>
 </head>
+
 <body>
 
-  <main class="container">
-    <article>
+<main class="container">
+  <article>
+
+    <!-- IMAGE HERO FULL WIDTH -->
+    <div class="hero-image">
+      <img src="Illublog.jpg" alt="Illustration agilité et échecs">
+    </div>
+
+    <div class="content">
+
       <header>
         <h1>♟️ <span>Quand l'agilité s'invite sur l'échiquier !</span></h1>
-        <p>Comment les préceptes agiles m'ont conduit jusqu'aux Championnats de France d'échecs.<br>
-		Un article accessible à tous, quelle que soit votre connaissance du jeu d'échecs.</p>
+        <p>
+          Comment les préceptes agiles m'ont conduit jusqu'aux Championnats de France d'échecs.<br>
+          Un article accessible à tous, quelle que soit votre connaissance du jeu d'échecs.
+        </p>
       </header>
 
       <p>Il y a quelques années, bien avant de baigner dans l'agilité, je passais mes soirées devant un échiquier.<br>
